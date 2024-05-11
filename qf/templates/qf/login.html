@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'qf/disenos.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="area-header">
+        <div class="container-fluid">
+            <div class="col-2">
+                <img src="../imgs/logo-vert-fnd-azul.svg" class="img-logo" alt="Q-Far">
+            </div>
+            <div class="col-10 altura-header">
+                <h1>Sistema del Químico Farmacéutico</h1>
+            </div>
+            </div>    
+        </div>
+    <div class="zona-login">
+		  
+        <div class="container-fluid">
+            
+      <div class="row">
+          
+        <div class="col-1"></div>
+          
+        <div class="col-10">
+            
+            <div class="area-login">
+                
+                <h3>Datos de acceso</h3>
+                
+            <p class="pb-3">Ingrese su RUT y contraseña para acceder a la administración del sistema de Q-FAR.</p>
+                
+            <div class="row mb-3">
+                <div class="col-4"><b>Email:</b></div>
+                <div class="col-8"><input type="text" class="w-100" name="user" id="user"></div>
+                </div>
+            <div class="row mb-3">
+                <div class="col-4"><b>Contraseña:</b></div>
+                <div class="col-8"><input type="password" class="w-100" name="pass" id="pass"></div>
+                </div>
+                
+            <div class="row pt-3">
+                <div class="col-4">
+                <!--button type="button" class="btn-qfar" onclick="location.href='listado.php';">entrar</button-->
+                <button type="button" class="btn-qfar" onclick="login2();">entrar</button>
+                </div>
+                <div class="col-8">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#olvido">¿Olvido su contraseña?</a>
+                </div>
+            </div>	
+            
+            </div>
+            
+            </div>
+          
+          <div class="col-1"></div>
+            
+        </div>
+          
+      </div>
+        </div>	
+</body>
+</html>
